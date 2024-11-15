@@ -193,18 +193,7 @@ async def send_consecutive_messages(bot,  list_of_struct: List[str]) -> None:
     return list_of_struct
 
 async def send_welcome_message(bot) -> None:
-    text = """🌟 Benvenuti nel magico mondo di Moonies! 🌙
-    Siamo felicissimi di avere voi e i vostri piccoli tesori a bordo. Qui troverete le migliori offerte su una vasta gamma di prodotti per bambini, selezionati con amore per garantire la massima qualità e sicurezza per i vostri piccoli bambini.
-
-     Cosa troverete su questo canale:
-
-    🍼 Accessori per la pappa: dai biberon ai seggioloni, tutto ciò che serve per rendere il momento della pappa un’esperienza speciale.
-    👶 Abbigliamento e accessori: vestitini adorabili e comodi per ogni occasione, sempre con un occhio di riguardo alla qualità.
-    🎨 Giochi e attività: per stimolare la creatività e lo sviluppo dei vostri bambini, con giochi educativi e divertenti.
-    🛏️ Articoli per la nanna: culle, lettini e accessori per un sonno sereno e sicuro.
-    🚼 Cura del bambino: pannolini, prodotti per la pelle e tutto il necessario per la cura quotidiana
-
-    🎉 Ogni giorno, vi porteremo nuove offerte e promozioni imperdibili, così potrete fare shopping intelligente e risparmiare senza rinunciare alla qualità.
+    text = """Welcome on the Telegram channel !
     """
 
     await bot.send_message(
@@ -217,17 +206,12 @@ async def send_welcome_message(bot) -> None:
 
 
 async def send_goodbye_message(bot) -> None:
-    photo_caption = """Anche oggi la nostra giornata ricca di fantastici sconti si è conclusa 🎁 👶🏻
-    ➖➖➖➖➖➖➖➖➖
-    Seguici sui nostri canali social:
-    🔹 Facebook: https://www.facebook.com/profile.php?id=61555862858610
-    🔸 Instagram: https://www.instagram.com/_moonies_baby?igsh=MTBiaWNpM3lyYXJrNg%3D%3D&utm_source=qr
-    🔹TikTok: https://www.tiktok.com/@moonies_baby?_t=8nvkr9ZbKm8&_r=1
+    photo_caption = """ GoodBye Message Channel
 """
 
 
 
-    photo_path = './mooneis_logo.jpg'  # Update with the path to your photo
+    photo_path = './logo.jpg'  # Update with the path to your photo
 
     # Send photo with initial inline keyboard
     with open(photo_path, 'rb') as photo:
@@ -430,7 +414,7 @@ async def run_bot(bot: telegram.Bot) -> None:
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     # Prepare photo and initial buttons
     current_path = os.getcwd()
-    photo_path = './mooneis_logo.jpg'  # Update with the path to your photo
+    photo_path = './logo.jpg'  # Update with the path to your photo
 
     photo_caption = "Benvenuto sul bot Mooneis per generare tutte le offerte: "
 
