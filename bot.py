@@ -39,7 +39,7 @@ TR0, TR_ASIN, TR_LINK, TR_EDIT_START_BOT, TR_EDIT_END_BOT, TR_EDIT_INTERVAL_BOT,
 
 logging.basicConfig(level=logging.INFO)
 
-# ********** Author: Valerio Armenante **********
+# ********** Author: valearm **********
 
 categories_translation = {
     'Apparel': 'Abbigliamento',
