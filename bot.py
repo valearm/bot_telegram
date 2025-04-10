@@ -816,6 +816,7 @@ if __name__ == "__main__":
             config.MIN_SALE = pickle.load(file)
             config.PAUSE_MINUTES = pickle.load(file)
             config.categories = pickle.load(file)
+        logging.info("File Bot configuration letto ! ")
     except:
         logging.warning("File Bot configuration non esiste ! ")
     # Create the Application and pass the bot's token
