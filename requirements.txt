@@ -6,3 +6,6 @@ python_dateutil==2.8.2
 simplejson==3.17.5
 beautifulsoup4
 requests
+pytz
+lxml
+html5lib

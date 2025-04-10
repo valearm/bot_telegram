@@ -99,7 +99,7 @@ class Configuration(six.with_metaclass(TypeWithDefault, object)):
             connection_pool_maxsize = multiprocessing.cpu_count() * 5
         self.connection_pool_maxsize = connection_pool_maxsize
         # Proxy URL
-        self.proxy = 'http://proxy.server:3128'
+        self.proxy = None
         # Safe chars for path_param
         self.safe_chars_for_path_param = ''
 
